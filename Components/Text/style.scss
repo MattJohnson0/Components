@@ -1,0 +1,9 @@
+.mobfont {
+    font-family: MOBFontBold;
+    font-size: clamp(1rem, 3.5vw, 4rem);
+    a {
+        color: black !important;
+        font-family: MOBFontBold;
+        font-size: clamp(1rem, 3.5vw, 4rem);
+    }
+}

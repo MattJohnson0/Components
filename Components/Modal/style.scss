@@ -1,0 +1,17 @@
+@import "../../sharedStyles/colors.scss";
+
+.modal-container{
+    position: fixed;
+    background-color: $transparent-charcoal;
+    z-index: 10;
+    inset: 0;
+
+    .modal{
+        height: 90%;
+        background-color: $ltgrey;
+        border-radius: 1rem;
+        overflow: scroll;
+        margin: 0 20%;
+        padding: 1rem;
+    }
+}

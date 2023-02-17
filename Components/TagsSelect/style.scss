@@ -1,0 +1,16 @@
+@import "../../sharedStyles/colors.scss";
+.tags{
+    display:flex;
+    flex-wrap: wrap;
+    >div{
+        width: 24rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: .5rem 0;
+        input[type="radio"]{
+            width: 2rem !important;
+        }
+    }
+
+}

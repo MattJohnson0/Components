@@ -1,0 +1,25 @@
+.three-item-section{
+    .title{
+        height:5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+    }
+    .triple-item-row{
+        height: 30rem;
+        margin: 0;
+        padding-top: 4rem;
+        padding-bottom: 8rem;
+        > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item{
+            height: 100%;
+            width: 30rem;
+            background-color: white;
+        }
+    }
+}

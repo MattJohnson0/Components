@@ -1,0 +1,39 @@
+
+.all-social-media{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+    margin-top: 1rem;
+    
+    a{
+      padding: 0 .3rem;
+
+        img{
+            width: 5rem;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+  .all-social-media {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .all-social-media a img{
+    width: clamp(3rem, 6.5vw, 5rem)
+  }
+}
+
+@media(max-width: 640px) {
+  .all-social-media {
+    display: block;
+    text-align: center;
+
+    img {
+      width: clamp(3rem, 90%, 5rem);
+    }
+  }
+}

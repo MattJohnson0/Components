@@ -1,0 +1,29 @@
+@import "../../sharedStyles/colors.scss";
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+
+  .menu-container{
+    width: 9rem;
+  }
+
+  .hb-menu {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    padding-inline: 5vw;
+
+    .hb-menu {
+      display: flex;
+    }
+
+    > * ~:is(:not(.generic, .hb-menu)) {
+      display: none;
+    }
+  }
+}

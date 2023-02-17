@@ -1,0 +1,44 @@
+$row-margin: 3rem;
+$row-item-gap: 3rem;
+
+.double-item-row{
+    display: grid;
+    grid-template-areas: "one two";
+    grid-template-columns: calc(50% - (#{$row-item-gap} / 2)) calc(50% - (#{$row-item-gap} / 2));
+    gap: $row-item-gap;
+    margin-top: $row-margin;
+    .one{
+        grid-area: one;
+    }
+    .two{
+        grid-area: two;
+    }
+}
+
+.triple-item-row{
+    display: grid;
+    grid-template-areas: "one two three";
+    grid-template-columns: 
+      calc(33% - (#{$row-item-gap} / 3)) 
+      calc(33% - (#{$row-item-gap} / 3)) 
+      calc(33% - (#{$row-item-gap} / 3))
+    ;
+    gap: $row-item-gap;
+    margin-top: Max($row-margin * 2, 7vw);
+    margin-bottom: $row-margin;
+    .one{
+        grid-area: one;
+    }
+    .two{
+        grid-area: two;
+    }
+    .three{
+        grid-area: three;
+    }
+}
+
+@media(max-width: 1280px) {
+    .triple-item-row{
+        margin-top: Max($row-margin * 2, 12vw);
+    }
+}

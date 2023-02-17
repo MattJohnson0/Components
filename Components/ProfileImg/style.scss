@@ -1,0 +1,14 @@
+@import "../../sharedStyles/colors.scss";
+.profile-img{
+    aspect-ratio: 1;
+    width: 20rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.menu{
+    aspect-ratio: 1;
+    width: 9rem;
+}
